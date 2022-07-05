@@ -363,6 +363,9 @@ Route::prefix('api')->group(function () {
     Route::get('/kuliner', [API::class, 'kuliner']);
     Route::get('/wahana', [API::class, 'wahana']);
     Route::get('/desa', [API::class, 'desa']);
+    Route::get('/user', [API::class, 'user']);
+    Route::get('/login', [API::class, 'login']);
+    Route::post('/login', [API::class, 'login']);
 });
 
 // Route::get('/kategorievent', [App\Http\Controllers\EventController::class, 'index']);
